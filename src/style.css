@@ -1094,3 +1094,9 @@ body:not(.loaded) .hero-anim { opacity: 0; }
   z-index: 150;
 }
 .nav-overlay.show { display: block; }
+
+/* Tablet header fit (761px–1000px): keeps the nav on one line, no sideways scroll */
+@media (min-width: 761px) and (max-width: 1000px) {
+  .nav-actions .btn-primary.header-cta { display: none; }
+  nav.main-nav a { padding: 10px 10px; }
+}
